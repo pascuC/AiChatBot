@@ -5,8 +5,8 @@ const socket = io();
 const outputYou = document.querySelector('.output-you');
 const outputBot = document.querySelector('.output-bot');
 
-const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
-const recognition = new SpeechRecognition();
+const SpeechRecognition = window.speechRecognition || window.webkitSpeechRecognition;
+var recognition = new SpeechRecognition();
 
 recognition.lang = 'en-US';
 recognition.interimResults = false;
@@ -49,9 +49,9 @@ function synthVoice(text) {
   synth.speak(utterance);
 }
 
-socket.on('bot reply', function(replyText) {
+socket.on('bot reply', function (replyText) {
   synthVoice(replyText);
 
-  if(replyText == '') replyText = '(No answer...)';
+  if (replyText == '') replyText = '(No answer...)';
   outputBot.textContent = replyText;
 });
