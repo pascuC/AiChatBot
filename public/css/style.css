@@ -4,28 +4,11 @@ html {
   height: 100%;
 }
 body {
-  padding: 0;
-  margin: 0;
-  font-family: "HelveticaNeueLight", "HelveticaNeue-Light", "Helvetica Neue Light", "HelveticaNeue", "Helvetica Neue", 'TeXGyreHerosRegular', "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
-  font-weight: 300;
- 
-  background: rgb(255,255,255) ;
-  
-  background: top url(../images/bg.png) no-repeat , radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 50%, rgba(0,212,255,0.5886729691876751) 100%);
-
+  font-family: 'Montserrat', sans-serif;
+  background: url(../images/sound2.png) no-repeat, radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 50%, rgba(0,212,255,0.5886729691876751) 100%);
   background-size: auto;
   background-position: center;
   color: #333;
-}
-footer {
-  font-size: 0.75em;
-  color: silver;
-  position: fixed;
-  bottom: 1em;
-  left: 1em;
-}
-footer a {
-  color: #f80;
 }
 header {
   margin: 2em 0;
@@ -47,6 +30,10 @@ h2 {
 section {
   margin: 1.5em auto;
   width: 400px;
+}
+.dialog {
+  display:inline-block;
+  margin: 10em 0em;
 }
 button {
   display: block;

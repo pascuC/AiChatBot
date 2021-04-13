@@ -10,6 +10,8 @@
     <title>AI with Web Speech API</title>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
   </head>
 
@@ -19,11 +21,13 @@
       <h2>with Web Speech API</h2>
 
       <button><i class="fa fa-microphone"></i></button>
-
-      <div>
+      
+      <div class="dialog">
           <p>You said: <em class="output-you">...</em></p>
           <p>Bot replied: <em class="output-bot">...</em></p>
       </div>
+
+      <!-- <img src="images/sound.png" alt=""> -->
     </section>
 
     <script src="/socket.io/socket.io.js"></script>
